@@ -71,7 +71,7 @@
                         <div class="small-box bg-danger">
                             <div class="inner">
                                 <h3>48</h3>
-                                <p>Igrejas Registrados</p>
+                                <p>Igrejas Contabilizadas</p>
                             </div>
                             <div class="icon">
                                 <i class="ion ion-pie-graph"></i>

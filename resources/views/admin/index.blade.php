@@ -11,7 +11,7 @@
                     <ol class="breadcrumb float-sm-right">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                         <li class="breadcrumb-item active">Adm.</li>
-                       
+
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -71,7 +71,7 @@
                         <div class="small-box bg-danger">
                             <div class="inner">
                                 <h3>48</h3>
-                                <p>Templos Registrados</p>
+                                <p>Igrejas Registrados +</p>
                             </div>
                             <div class="icon">
                                 <i class="ion ion-pie-graph"></i>

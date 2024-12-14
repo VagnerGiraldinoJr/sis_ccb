@@ -4,6 +4,7 @@ use App\Http\Controllers\EventAttendanceController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\InfirmaryController;
 use App\Http\Controllers\PersonController;
+use App\Http\Controllers\IgrejaController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -14,6 +15,7 @@ Auth::routes();
 Route::get('/', function () {
     return redirect()->route('login');
 });
+
 
 // Rota do painel principal após login
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])
@@ -52,4 +54,8 @@ Route::middleware('auth')->group(function () {
     Route::put('infirmary/{entry}', [InfirmaryController::class, 'update'])->name('infirmary.update');
     Route::delete('infirmary/{id}', [InfirmaryController::class, 'destroy'])->name('infirmary.destroy');
 
- });
+    // Rota para API -
+    Route::resource('igreja', IgrejaController::class);
+    Route::get('/buscar-cep', [IgrejaController::class, 'buscarEnderecoPorCep']);
+
+});
